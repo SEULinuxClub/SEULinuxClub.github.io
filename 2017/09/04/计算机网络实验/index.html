@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="SEU Linux Club"><title>计算机网络实验 · 东南大学Linux俱乐部</title><meta name="description" content="实验一1.实验目标
+设计如图所示的网络，并进行IP地址和路由表的配置
+
+
+
+路由器的每一个端口对应一个子网,子网地址为:11.51.15.0~11.51.21.0
+终端及其设备端口分配IP地址,并保证连通。
+
+2.实验方法
+使用交叉线,从路由器 R0的FastEthernet1/0端口连接到路由器R"><meta name="keywords" content="Linux &amp; More"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">Club Blog</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">SEU LINUX Blog</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li class="soc"><a href="https://github.com/SEULinuxClub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://SEULinuxClub.github.io/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://SEULinuxClub.github.io" rel="noopener noreferrer">SEU Linux Club</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>计算机网络实验</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2017-09-04</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/计算机网络/" title="计算机网络" class="a-tag">计算机网络</a><span>&nbsp;</span></span></p><p class="post-abstract"><h1 id="实验一"><a href="#实验一" class="headerlink" title="实验一"></a>实验一</h1><h2 id="1-实验目标"><a href="#1-实验目标" class="headerlink" title="1.实验目标"></a>1.实验目标</h2><ul>
+<li>设计如图所示的网络，并进行IP地址和路由表的配置</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ZizhuoWang/ImageBed/network/shot.png" alt=""></p>
+<ul>
+<li>路由器的每一个端口对应一个子网,子网地址为:11.51.15.0~11.51.21.0</li>
+<li>终端及其设备端口分配IP地址,并保证连通。</li>
+</ul>
+<h2 id="2-实验方法"><a href="#2-实验方法" class="headerlink" title="2.实验方法"></a>2.实验方法</h2><ol>
+<li><p>使用交叉线,从路由器 R0的FastEthernet1/0端口连接到路由器R1的 FastEthernet1/0端口。设置 R0 的 FastEthernet1/0 端口 IP 为 11.51.15.1 ,子网掩码为 255.255.255.0 。设置 R1 的FastEthernet1/0端口IP为11.51.15.2,子网掩码为255.255.255.0</p>
+</li>
+<li><p>使用DTE串口线,从路由器R1的 Serial2/0端口连接到路由器 R2的Serial2/0端口。设置R1的Serial2/0 端口 IP 为 11.51.16.1 ,子网掩码为 255.255.255.0 。设置 R2 的 Serial2/0 端口 IP 为11.51.16.2,子网掩码为255.255.255.0。设置DCE端时钟频率为64000Hz. </p>
+</li>
+<li><p>使用交叉线,从路由器 R2的FastEthernet1/0端口连接到路由器R3的 FastEthernet0/0端口。设置 R2 的 FastEthernet1/0 端口 IP 为 11.51.17.1 ,子网掩码为 255.255.255.0 。设置 R3 的FastEthernet0/0端口IP为11.51.17.2,子网掩码为255.255.255.0</p>
+</li>
+<li><p>使用DTE串口线,从路由器R3的 Serial2/0端口连接到路由器 R4的Serial2/0端口。设置R3的Serial2/0 端口 IP 为 11.51.18.1 ,子网掩码为 255.255.255.0 。设置 R4 的 Serial2/0 端口 IP 为11.51.18.2,子网掩码为255.255.255.0。设置DCE端时钟频率为64000Hz. </p>
+</li>
+<li><p>使用直通线,从路由器R1 的 FastEthernet0/0端口连接到交换机 S1 的 FastEthernet1/1端口。设置 R1 的 FastEthernet0/0 端口 IP 为 11.51.19.1 ,子网掩码为 255.255.255.0 。设置 S1 的FastEthernet1/1端口为开启。</p>
+</li>
+<li><p>使用直通线,从交换机 S1的FastEthernet2/1 端口连接到终端设备 PC1的FastEthernet0。设置S1的 FastEthernet2/1端口为开启。设置PC1的网关为 11.51.19.1,FastEthernet0端口 IP 为11.51.19.2,子网掩码为255.255.255.0</p>
+</li>
+<li><p>使用直通线,从路由器R2 的 FastEthernet0/0端口连接到交换机 S2 的 FastEthernet1/1端口。设置 R2 的 FastEthernet0/0 端口 IP 为 11.51.20.1 ,子网掩码为 255.255.255.0 。设置 S1 的FastEthernet1/1端口为开启。</p>
+</li>
+<li><p>使用直通线,从交换机 S2的FastEthernet2/1 端口连接到终端设备 PC2的FastEthernet0。设置S2的 FastEthernet2/1端口为开启。设置PC2的网关为 11.51.20.1,FastEthernet0端口 IP 为11.51.20.2,子网掩码为255.255.255.0</p>
+</li>
+<li><p>使用直通线,从交换机 S2的FastEthernet3/1 端口连接到终端设备 PC3的FastEthernet0。设置S2的 FastEthernet3/1端口为开启。设置PC2的网关为 11.51.20.1,FastEthernet0端口 IP 为11.51.20.3,子网掩码为255.255.255.0</p>
+</li>
+<li><p>使用直通线,从路由器R3 的 FastEthernet1/0端口连接到交换机 S3 的 FastEthernet1/1端口。设置 R1 的 FastEthernet1/0 端口 IP 为 11.51.21.1 ,子网掩码为 255.255.255.0 。设置 S3 的FastEthernet1/1端口为开启。</p>
+</li>
+<li><p>使用直通线,从交换机 S3的FastEthernet2/1 端口连接到终端设备 PC4的FastEthernet0。设置S3的 FastEthernet2/1端口为开启。设置PC4的网关为 11.51.21.1,FastEthernet0端口 IP 为11.51.21.2,子网掩码为255.255.255.0</p>
+</li>
+<li><p>各个路由器配置相应的路由表，除了直接可以连通的子网之外，其他子网均通过相邻的路由器跳转。例如路由器R0的路由表配置：</p>
+<p>|    目标网络    |     子网掩码      |    下一跳     |<br>| :——–: | :———–: | :——–: |<br>| 11.51.16.0 | 255.255.255.0 | 11.51.15.2 |<br>| 11.51.17.0 | 255.255.255.0 | 11.51.15.2 |<br>| 11.51.18.0 | 255.255.255.0 | 11.51.15.2 |<br>| 11.51.19.0 | 255.255.255.0 | 11.51.15.2 |<br>| 11.51.20.0 | 255.255.255.0 | 11.51.15.2 |<br>| 11.51.21.0 | 255.255.255.0 | 11.51.15.2 |</p>
+</li>
+</ol>
+<h2 id="3-实验结果"><a href="#3-实验结果" class="headerlink" title="3.实验结果"></a>3.实验结果</h2><p>​    终端与终端之间、路由器与终端之间、路由器与路由器之间均可以互相Ping通。</p>
+<h2 id="4-实验感想"><a href="#4-实验感想" class="headerlink" title="4.实验感想"></a>4.实验感想</h2><p>​    通过仿真配置网络实验,我加深了对路由器、交换机和终端设备之间的关系的理解,掌握了三者之间端口的连接、配置方法,学会了路由表的设置,并且了解了配置各个设备的命令行操作方法，还了解到各种线材的作用，为网络设备的实际操作打下基础。</p>
+<h1 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h1><h2 id="1-实验目标-1"><a href="#1-实验目标-1" class="headerlink" title="1.实验目标"></a>1.实验目标</h2><p>​    3 位同学一组,设计如图的网络,(3 个路由器连接 A-D 的 4 个子网),并进行配置。要求 ABC 子网对应 3 位同学的学号(如 71115101 对应 11.51.1.0/24),通过静态路由的设置,保证路由器间互相 Ping 通。</p>
+<h2 id="2-实验方法-1"><a href="#2-实验方法-1" class="headerlink" title="2.实验方法"></a>2.实验方法</h2><ol>
+<li><p>在运行中打开 Telnet 10.3.0.77 10005</p>
+</li>
+<li><p>配置 R5的端口地址:</p>
+<ol>
+<li><p>设置 FastEthernet0/0：ip address 11.51.15.2 255.255.255.0             (与 R3的 FastEthernet0/1 相连);使用子网二的二号地址.</p>
+</li>
+<li><p>设置 FastEthernet0/1：ip address 11.51.12.1 255.255.255.0 </p>
+<p>(与 R3的 FastEthernet0/1 相连);使用子网三的一号地址.</p>
+</li>
+</ol>
+</li>
+<li><p>配置静态路由表:</p>
+<ol>
+<li>ip route 11.51.13.0 255.255.255.0 11.51.15.1(目标地址是子网一,子<br>网掩码是 255.255.255.0,下一跳是子网二的一号地址)</li>
+<li>ip route 11.13.4.0 255.255.255.0 11.51.12.2(目标地址是子网四,子<br>网掩码是 255.255.255.0,下一跳是子网三的二号地址)</li>
+</ol>
+</li>
+<li><p>测试与其他路由器的连接(Ping)</p>
+</li>
+</ol>
+<h2 id="3-实验结果-1"><a href="#3-实验结果-1" class="headerlink" title="3.实验结果"></a>3.实验结果</h2><p>​    各个路由器之间可以相互Ping通，路由表无误。</p>
+<h2 id="4-实验感想-1"><a href="#4-实验感想-1" class="headerlink" title="4.实验感想"></a>4.实验感想</h2><p>​    通过这次实验,自己配置路由器,我对子网划分有了更深入的认识.在实验过程中,配置了子网端口和静态路由表,最后使子网之间能够互相连通.我从这次实验中体会到,要学好这门课,还是要多动手实践,并且要对书本上的知识有更多的思考而不是单纯的记忆.</p>
+</p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=http://SEULinuxClub.github.io/2017/09/04/计算机网络实验/%20东南大学Linux俱乐部%20计算机网络实验" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2017/09/04/学习正则表达式/" title="学习正则表达式"><i class="fa fa-angle-double-left"></i>&nbsp;Previous post: 学习正则表达式</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2017/09/01/余泽晨大佬的学习资料/" title="大佬的学习资料">Next post: 大佬的学习资料&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><div id="lv-container" data-id="city" data-uid="MTAyMC8zNjY3Ny8xMzIxMg=="><script type="text/javascript">(function (d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') {
+        return;
+    }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');</script><noscript> Please activate JavaScript for write a comment in LiveRe</noscript></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://SEULinuxClub.github.io" rel="noopener noreferrer">SEU Linux Club</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>

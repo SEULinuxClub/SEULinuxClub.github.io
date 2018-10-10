@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>东南大学Linux俱乐部</title>
+  
+  <subtitle>SEU Linux Club</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://SEULinuxClub.github.io/"/>
+  <updated>2018-05-28T14:06:00.000Z</updated>
+  <id>http://SEULinuxClub.github.io/</id>
+  
+  <author>
+    <name>SEU Linux Club</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件工程导论2018复习总结</title>
+    <link href="http://SEULinuxClub.github.io/2018/01/17/%E6%9D%8E%E5%BF%85%E4%BF%A12018%E5%A4%8D%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://SEULinuxClub.github.io/2018/01/17/李必信2018复习总结/</id>
+    <published>2018-01-17T05:17:01.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;软件工程的介绍&quot;&gt;&lt;a href=&quot;#软件工程的介绍&quot; class=&quot;headerlink&quot; title=&quot;软件工程的介绍&quot;&gt;&lt;/a&gt;软件工程的介绍&lt;/h1&gt;&lt;h2 id=&quot;软件？&quot;&gt;&lt;a href=&quot;#软件？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件工程" scheme="http://SEULinuxClub.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习正则表达式</title>
+    <link href="http://SEULinuxClub.github.io/2017/09/04/%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://SEULinuxClub.github.io/2017/09/04/学习正则表达式/</id>
+    <published>2017-09-04T09:00:53.000Z</published>
+    <updated>2018-05-28T14:05:59.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://i.imgur.com/bYwl7Vf.png&quot; alt=&quot;Learn Regex&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;## 什么是正则表达式?&lt;br&gt;&lt;br&gt;&amp;gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="正则表达式" scheme="http://SEULinuxClub.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络实验</title>
+    <link href="http://SEULinuxClub.github.io/2017/09/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AE%9E%E9%AA%8C/"/>
+    <id>http://SEULinuxClub.github.io/2017/09/04/计算机网络实验/</id>
+    <published>2017-09-04T01:10:55.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;实验一&quot;&gt;&lt;a href=&quot;#实验一&quot; class=&quot;headerlink&quot; title=&quot;实验一&quot;&gt;&lt;/a&gt;实验一&lt;/h1&gt;&lt;h2 id=&quot;1-实验目标&quot;&gt;&lt;a href=&quot;#1-实验目标&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="计算机网络" scheme="http://SEULinuxClub.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大佬的学习资料</title>
+    <link href="http://SEULinuxClub.github.io/2017/09/01/%E4%BD%99%E6%B3%BD%E6%99%A8%E5%A4%A7%E4%BD%AC%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
+    <id>http://SEULinuxClub.github.io/2017/09/01/余泽晨大佬的学习资料/</id>
+    <published>2017-09-01T06:01:14.000Z</published>
+    <updated>2018-05-28T14:05:59.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://github.com/SEULinuxClub/DaLaoZiLiao&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="资料" scheme="http://SEULinuxClub.github.io/tags/%E8%B5%84%E6%96%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>社会实践个人小结</title>
+    <link href="http://SEULinuxClub.github.io/2017/09/01/%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E4%B8%AA%E4%BA%BA%E5%B0%8F%E7%BB%93/"/>
+    <id>http://SEULinuxClub.github.io/2017/09/01/社会实践个人小结/</id>
+    <published>2017-09-01T00:57:19.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;社会实践个人总结&quot;&gt;&lt;a href=&quot;#社会实践个人总结&quot; class=&quot;headerlink&quot; title=&quot;社会实践个人总结&quot;&gt;&lt;/a&gt;社会实践个人总结&lt;/h1&gt;&lt;h2 id=&quot;71115115-王子卓&quot;&gt;&lt;a href=&quot;#71115115-王子卓&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="社会实践" scheme="http://SEULinuxClub.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Docker和Cloud9搭建Web端IDE</title>
+    <link href="http://SEULinuxClub.github.io/2017/08/24/%E4%BD%BF%E7%94%A8Docker%E5%92%8CCloud9%E6%90%AD%E5%BB%BAWeb%E7%AB%AFIDE/"/>
+    <id>http://SEULinuxClub.github.io/2017/08/24/使用Docker和Cloud9搭建Web端IDE/</id>
+    <published>2017-08-24T12:41:57.000Z</published>
+    <updated>2018-05-28T14:05:59.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; Docker简介&lt;/p&gt;
+&lt;h2 id=&quot;1-安装Docker&quot;&gt;&lt;a href=&quot;#1-安装Docker&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Docker" scheme="http://SEULinuxClub.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Storm简介</title>
+    <link href="http://SEULinuxClub.github.io/2017/08/24/Storm%E7%AE%80%E4%BB%8B/"/>
+    <id>http://SEULinuxClub.github.io/2017/08/24/Storm简介/</id>
+    <published>2017-08-24T12:36:00.000Z</published>
+    <updated>2018-05-28T14:05:59.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Storm的历史&quot;&gt;&lt;a href=&quot;#Storm的历史&quot; class=&quot;headerlink&quot; title=&quot;Storm的历史&quot;&gt;&lt;/a&gt;Storm的历史&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Storm是由&lt;strong&gt;Nathan
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Storm" scheme="http://SEULinuxClub.github.io/tags/Storm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概率论总结第五章</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/10/%E6%A6%82%E7%8E%87%E8%AE%BA%E6%80%BB%E7%BB%93%E7%AC%AC%E4%BA%94%E7%AB%A0/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/10/概率论总结第五章/</id>
+    <published>2017-06-10T15:53:06.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="概率论" scheme="http://SEULinuxClub.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概率论总结第四章</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/10/%E6%A6%82%E7%8E%87%E8%AE%BA%E6%80%BB%E7%BB%93%E7%AC%AC%E5%9B%9B%E7%AB%A0/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/10/概率论总结第四章/</id>
+    <published>2017-06-10T15:47:54.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="概率论" scheme="http://SEULinuxClub.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概率论总结(前三章)</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/10/%E6%A6%82%E7%8E%87%E8%AE%BA%E6%80%BB%E7%BB%93-%E5%89%8D%E4%B8%89%E7%AB%A0/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/10/概率论总结-前三章/</id>
+    <published>2017-06-10T09:46:57.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="概率论" scheme="http://SEULinuxClub.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统实验三</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%B8%89/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/09/操作系统实验三/</id>
+    <published>2017-06-09T06:47:21.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;银行家算法的实现&quot;&gt;&lt;a href=&quot;#银行家算法的实现&quot; class=&quot;headerlink&quot; title=&quot;银行家算法的实现&quot;&gt;&lt;/a&gt;银行家算法的实现&lt;/h1&gt;&lt;h1 id=&quot;71115115-王子卓-2017年6月2日&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://SEULinuxClub.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统实验二</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%BA%8C/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/09/操作系统实验二/</id>
+    <published>2017-06-09T06:41:57.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;操作系统实验二&quot;&gt;&lt;a href=&quot;#操作系统实验二&quot; class=&quot;headerlink&quot; title=&quot;操作系统实验二&quot;&gt;&lt;/a&gt;操作系统实验二&lt;/h1&gt;&lt;h1 id=&quot;生产者——消费者问题&quot;&gt;&lt;a href=&quot;#生产者——消费者问题&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://SEULinuxClub.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统实验一</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C%E4%B8%80/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/09/操作系统实验一/</id>
+    <published>2017-06-09T06:39:57.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;向Linux内核增加一个系统调用&quot;&gt;&lt;a href=&quot;#向Linux内核增加一个系统调用&quot; class=&quot;headerlink&quot; title=&quot;向Linux内核增加一个系统调用&quot;&gt;&lt;/a&gt;向Linux内核增加一个系统调用&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://SEULinuxClub.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>毛概复习</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/05/%E6%AF%9B%E6%A6%82%E5%A4%8D%E4%B9%A0/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/05/毛概复习/</id>
+    <published>2017-06-04T16:15:56.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-如何理解“马克思主义中国化”的科学内涵&quot;&gt;&lt;a href=&quot;#1-如何理解“马克思主义中国化”的科学内涵&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="毛概" scheme="http://SEULinuxClub.github.io/tags/%E6%AF%9B%E6%A6%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>归一化谷歌距离的计算方法</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/03/%E5%BD%92%E4%B8%80%E5%8C%96%E8%B0%B7%E6%AD%8C%E8%B7%9D%E7%A6%BB%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/03/归一化谷歌距离的计算方法/</id>
+    <published>2017-06-03T14:37:43.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;归一化谷歌距离的计算方法&quot;&gt;&lt;a href=&quot;#归一化谷歌距离的计算方法&quot; class=&quot;headerlink&quot; title=&quot;归一化谷歌距离的计算方法&quot;&gt;&lt;/a&gt;&lt;div align=&quot;middle&quot;&gt;&lt;font
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://SEULinuxClub.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用阿里云服务器搭建PPTP协议的VPN</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/03/%E4%BD%BF%E7%94%A8%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAPPTP%E5%8D%8F%E8%AE%AE%E7%9A%84VPN/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/03/使用阿里云服务器搭建PPTP协议的VPN/</id>
+    <published>2017-06-03T14:36:06.000Z</published>
+    <updated>2018-05-28T14:05:59.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;作为运维，我手上现在有一个位于美国硅谷的阿里云ECS服务器。秉承物尽其用的原则，正好搭建一个VPN服务器。&lt;/p&gt;
+&lt;h1 id=&quot;环境介绍&quot;&gt;&lt;a href=&quot;#环境介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="VPN" scheme="http://SEULinuxClub.github.io/tags/VPN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机输入输出系统接口实验报告</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8F%A3%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/03/计算机输入输出系统接口实验报告/</id>
+    <published>2017-06-03T07:26:29.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;实验一-环境熟悉与I-O地址译码&quot;&gt;&lt;a href=&quot;#实验一-环境熟悉与I-O地址译码&quot; class=&quot;headerlink&quot; title=&quot;实验一    环境熟悉与I/O地址译码&quot;&gt;&lt;/a&gt;实验一    环境熟悉与I/O地址译码&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IO" scheme="http://SEULinuxClub.github.io/tags/IO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机输入输出系统汇编实验报告</title>
+    <link href="http://SEULinuxClub.github.io/2017/06/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F%E6%B1%87%E7%BC%96%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+    <id>http://SEULinuxClub.github.io/2017/06/03/计算机输入输出系统汇编实验报告/</id>
+    <published>2017-06-03T07:13:14.000Z</published>
+    <updated>2018-05-28T14:06:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;实验一-汇编语言程序上机过程&quot;&gt;&lt;a href=&quot;#实验一-汇编语言程序上机过程&quot; class=&quot;headerlink&quot; title=&quot;实验一    汇编语言程序上机过程&quot;&gt;&lt;/a&gt;&lt;strong&gt;实验一   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IO" scheme="http://SEULinuxClub.github.io/tags/IO/"/>
+    
+  </entry>
+  
+</feed>

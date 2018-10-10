@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="SEU Linux Club"><title>概率论总结(前三章) · 东南大学Linux俱乐部</title><meta name="description" content="pdf
+请看PDF版的好吧-_-|||MathJax实在不给力第一章 随机事件和概率1.1 事件、样本空间、事件间的关系与运算1.1.1 随机试验
+对随机现象进行观察或实验成为随机试验，简称试验，记作E，它具有如下特点：
+
+可以在相同条件下重复进行。
+所得的结果可能不止一个，且所有可能结果都能事前已"><meta name="keywords" content="Linux &amp; More"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">Club Blog</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">SEU LINUX Blog</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li class="soc"><a href="https://github.com/SEULinuxClub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://SEULinuxClub.github.io/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://SEULinuxClub.github.io" rel="noopener noreferrer">SEU Linux Club</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>概率论总结(前三章)</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2017-06-10</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/概率论/" title="概率论" class="a-tag">概率论</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><a href="https://raw.githubusercontent.com/ZizhuoWang/ImageBed/0b841318834bfa388a0c83ad957f17378a804fc5/GaiLvLun/%E6%A6%82%E7%8E%87%E8%AE%BA%E6%80%BB%E7%BB%93%E5%89%8D%E4%B8%89%E7%AB%A0.pdf" target="_blank" rel="noopener">pdf</a></p>
+<h1 id="请看PDF版的好吧-MathJax实在不给力"><a href="#请看PDF版的好吧-MathJax实在不给力" class="headerlink" title="请看PDF版的好吧-_-|||MathJax实在不给力"></a>请看PDF版的好吧-_-|||MathJax实在不给力</h1><h1 id="第一章-随机事件和概率"><a href="#第一章-随机事件和概率" class="headerlink" title="第一章 随机事件和概率"></a>第一章 随机事件和概率</h1><h2 id="1-1-事件、样本空间、事件间的关系与运算"><a href="#1-1-事件、样本空间、事件间的关系与运算" class="headerlink" title="1.1 事件、样本空间、事件间的关系与运算"></a>1.1 事件、样本空间、事件间的关系与运算</h2><h3 id="1-1-1-随机试验"><a href="#1-1-1-随机试验" class="headerlink" title="1.1.1 随机试验"></a>1.1.1 随机试验</h3><blockquote>
+<p>对随机现象进行观察或实验成为随机试验，简称试验，记作<em>E</em>，它具有如下特点：</p>
+<ol>
+<li>可以在相同条件下重复进行。</li>
+<li>所得的结果可能不止一个，且所有可能结果都能事前已知。</li>
+<li>每次具体实验之前无法预知会出现哪个结果。</li>
+</ol>
+</blockquote>
+<h3 id="1-1-2-样本空间"><a href="#1-1-2-样本空间" class="headerlink" title="1.1.2 样本空间"></a>1.1.2 样本空间</h3><blockquote>
+<p>随机试验的每一可能结果称为样本点，记作$\omega$.由所有样本点全体组成的集合称为样本空间，记作$\Omega$.</p>
+</blockquote>
+<p>​    样本点是组成样本空间的元素，样本空间是样本点的全集，样本空间有以下三种类型：</p>
+<ol>
+<li>有限集合：样本空间中的样本点个数是有限的。</li>
+<li>无限可列集合：样本空间中的样本点个数是无限的，但是可以列出来。</li>
+<li>无限不可列集合：样本空间中的样本点个数是无限的，而且不能列出来。</li>
+</ol>
+<h3 id="1-1-3-随机事件"><a href="#1-1-3-随机事件" class="headerlink" title="1.1.3 随机事件"></a>1.1.3 随机事件</h3><blockquote>
+<p>样本空间的子集称为随机事件，简称事件，常用字母<em>A,B,C</em>等表示</p>
+</blockquote>
+<p>​    随机事件是由样本空间中的元素即样本点组成，由一个样本点组成的子集是最简单事件，称为==基本事件==。随机事件既然由样本点组成，那么也可以认为随机事件是由基本事件组成。</p>
+<p>​    如果一次试验的结果为某一基本事件出现，就称该基本事件出现或发生。如果组成事件A的一个基本事件出现或发生，也称事件A出现或发生。</p>
+<p>​    把$\Omega$看成一个事件，则每次试验必有$\Omega$中某一基本事件发生，也就是每次试验$\Omega$必然发生，称$\Omega$为必然事件。</p>
+<p>​    把不包含任何样本点的空集$\phi$看成一个事件，则每次试验$\phi$必不发生，称$\phi$为不可能事件。</p>
+<h3 id="1-1-4-事件的包含"><a href="#1-1-4-事件的包含" class="headerlink" title="1.1.4 事件的包含"></a>1.1.4 事件的包含</h3><blockquote>
+<p>如果事件A发生必然导致事件B发生，则称事件B包含事件A，或称事件A包含于事件B，记为$B \supset A$或$A \subset B$.</p>
+</blockquote>
+<p>​    从集合关系来说，事件A的每一个样本点都属于事件B。</p>
+<h3 id="1-1-5-事件的相等"><a href="#1-1-5-事件的相等" class="headerlink" title="1.1.5 事件的相等"></a>1.1.5 事件的相等</h3><blockquote>
+<p>如果$A \supset B$和$B \supset A$同时成立，则称事件A与事件B相等。</p>
+</blockquote>
+<h3 id="1-1-6-事件的交"><a href="#1-1-6-事件的交" class="headerlink" title="1.1.6 事件的交"></a>1.1.6 事件的交</h3><blockquote>
+<p>如果事件A与事件B同时发生，则称这样的一个事件为事件A与事件B的交或积，记为$A \cap B$或$AB$</p>
+</blockquote>
+<p>​    集合$A\cap B$是由同时属于A与B的所有公共样本点构成。</p>
+<p>​    事件的交可以推广到有限多个事件或可数无穷多个事件的情形：<br>$$<br>\bigcap_{i=1}^{n}A_{i} = A_1 \cap A_2 \cap \cdots \cap A_n \<br>\bigcap_{i=1}^{+ \infty}A_i = A_1 \cap A_2 \cap \cdots \cap A_n \cap \cdots<br>$$</p>
+<h3 id="1-1-7-互斥事件"><a href="#1-1-7-互斥事件" class="headerlink" title="1.1.7 互斥事件"></a>1.1.7 互斥事件</h3><blockquote>
+<p>如果事件A与事件B的关系为$AB=\phi$，即A与B不能同时发生，则称事件A与事件B为互斥或互不相容。</p>
+</blockquote>
+<p>​    互斥的两个事件没有公共样本点。</p>
+<p>​    事件的互斥可以推广到有限多个事件或可数无穷多个事件的情形：</p>
+<p>​    若n个事件$A_1,A_2,A_3\cdots,A_n$中任意两个事件均互斥，则称这n个事件两两互斥或两两互不相容。</p>
+<p>​    若可数无穷多个事件$A_1,A_2,A_3\cdots,A_n,\cdots$中任意两个事件均互斥，则称这可数无穷多个事件两两互斥或两两互不相容。</p>
+<h3 id="1-1-8-事件的并"><a href="#1-1-8-事件的并" class="headerlink" title="1.1.8 事件的并"></a>1.1.8 事件的并</h3><blockquote>
+<p>如果事件A与事件B至少有一个发生，则称这样一个事件为事件A与事件B的并或者和，记为$A \cup B$</p>
+</blockquote>
+<p>​    集合$A\cup B$是由属于A与B的所有样本点构成。</p>
+<p>​    事件的并可推广到有限多个事件或可数无穷多个事件的情形：<br>$$<br>\bigcup_{i=1}^{n}A_i = A_1 \cup A_2 \cup \cdots A_n \<br>\bigcup_{i=1}^{+\infty}A_i = A_1 \cup A_2 \cup \cdots A_n \cup \cdots<br>$$</p>
+<h3 id="1-1-9-对立事件"><a href="#1-1-9-对立事件" class="headerlink" title="1.1.9 对立事件"></a>1.1.9 对立事件</h3><blockquote>
+<p>如果事件A与事件B有且仅有一个发生，即同时成立$A \cup B = \Omega$和$A \cap B = \phi$，则称事件A与事件B为对立事件或互逆事件，记为$\overline{A} = B$或$\overline{B} = A$.</p>
+</blockquote>
+<h3 id="1-1-10-事件的差"><a href="#1-1-10-事件的差" class="headerlink" title="1.1.10 事件的差"></a>1.1.10 事件的差</h3><blockquote>
+<p>事件A发生而事件B不发生称为事件A与事件B的差，记为$A-B$.</p>
+</blockquote>
+<p>​    在样本空间中的集合$A-B$是由属于事件A而不属于事件B的所有样本点构成的集合。</p>
+<p>​    显然$A-B = A \overline{B}$.</p>
+<h3 id="1-1-11-事件的运算规律"><a href="#1-1-11-事件的运算规律" class="headerlink" title="1.1.11 事件的运算规律"></a>1.1.11 事件的运算规律</h3><ol>
+<li>交换律  $A \cup B = B \cup A , A \cap B = B \cap A$</li>
+<li>结合律  $A \cup (B \cup C) = (A \cup B) \cup C \ A \cap (B \cap C) = (A \cap B) \cap C$</li>
+<li>分配律  $A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \ A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$</li>
+<li>对偶律  $\overline{A \cup B} = \overline{A} \cap \overline{B} , \overline{A \cap B} = \overline{A} \cup \overline{B} \ \overline{\bigcup_{i=1}^{n}} = \bigcap_{i=1}^{n} \overline{A_i} , \overline{\bigcap_{i=1}^{n}} = \bigcup_{i=1}^{n} \overline{A_i}$</li>
+</ol>
+<h2 id="1-2-概率、条件概率、独立性和五大公式"><a href="#1-2-概率、条件概率、独立性和五大公式" class="headerlink" title="1.2 概率、条件概率、独立性和五大公式"></a>1.2 概率、条件概率、独立性和五大公式</h2><h3 id="1-2-1-概率公理"><a href="#1-2-1-概率公理" class="headerlink" title="1.2.1 概率公理"></a>1.2.1 概率公理</h3><p>​    设试验E的样本空间为$\Omega$，称实值函数P为概率，如果P满足如下三个条件：</p>
+<ol>
+<li>对于任意事件A，有$P(A) \ge 0$</li>
+<li>对于必然事件$\Omega$，有$P(A) = A$</li>
+<li>对于两两互斥的可数无穷多个事件$A_1 , A_2 , \cdots , A_n , \cdots$ 有$P(A_1 \cup A_2 \cup \cdots \cup A_n \cup \cdots) = P(A_1) + P(A_2) + \cdots + P(A_n) + \cdots $，称$P(A)$为事件A的概率。</li>
+</ol>
+<h3 id="1-2-2-条件概率"><a href="#1-2-2-条件概率" class="headerlink" title="1.2.2 条件概率"></a>1.2.2 条件概率</h3><blockquote>
+<p>设$A , B$为两个事件，且$P(A)&gt;0$，称<br>$$<br>P(B | A) = \frac{P(AB)}{P(A)}<br>$$<br>为在事件A发生的条件下，事件B发生的条件概率。</p>
+</blockquote>
+<h3 id="1-2-3-概率的性质"><a href="#1-2-3-概率的性质" class="headerlink" title="1.2.3 概率的性质"></a>1.2.3 概率的性质</h3><ol>
+<li>$P(\phi) = 0$</li>
+<li>$0 \le P(A) \le 1$</li>
+<li>$P(\overline{A}) = 1 - P(A) $</li>
+<li>$A \subset B$，则$P(A) \le P(B)$</li>
+<li>对于两两互斥的有限个事件$A_1, A_2, \cdots, A_n$，有</li>
+</ol>
+<p>$$<br>P(A_1 \cup A_2 \cup \cdots \cup A_n) = P(A_1) + P(A_2) + \cdots + P(A_n)<br>$$</p>
+<h3 id="1-2-4-事件独立性"><a href="#1-2-4-事件独立性" class="headerlink" title="1.2.4 事件独立性"></a>1.2.4 事件独立性</h3><blockquote>
+<p>设$A,B$两事件满足等式<br>$$<br>P(AB) = P(A)P(B)<br>$$<br>则称A与B相互独立。</p>
+</blockquote>
+<p>​    设$A_1, A_2, \cdots, A_n$是n个事件，如果对于任意$k(1 &lt; k &lt; n)$，任意$1 \le i_1&lt; i_2&lt; \cdots&lt; i_k \le n$满足等式<br>$$<br>P(A_1 A_2 \cdots A_k) = P(A_1)P(A_2) \cdots P(A_k)<br>$$<br>​    则称$A_1, A_2, \cdots , A_n$为相互独立的事件。</p>
+<p>【注】：n个事件相互独立需要<br>$$<br>C_n^2+C_n^3+\cdots+C_n^n = 2^n-n-1个等式成立<br>$$</p>
+<h3 id="1-2-5-相互独立的性质"><a href="#1-2-5-相互独立的性质" class="headerlink" title="1.2.5 相互独立的性质"></a>1.2.5 相互独立的性质</h3><ol>
+<li>A与B相互独立的充要条件是$A与\overline{B}或\overline{A}与B或\overline{A}与\overline{B}$相互独立。</li>
+<li>当$0&lt;P(A)&lt;1$时，A与B独立$\Leftrightarrow P(B|A)=P(B)或P(B|A)=P(B|\overline{A})$</li>
+<li>若$A_1, A_2, \cdots , A_n$相互独立，则$A_1, A_2, \cdots , A_n$必两两独立。反之，$A_1, A_2, \cdots , A_n$两两独立，则$A_1, A_2, \cdots , A_n$不一定相互独立。</li>
+<li>当$A_1, A_2, \cdots , A_n$相互独立时，它们的部分事件也是相互独立的。</li>
+<li>当$A_1, A_2, \cdots , A_n$相互独立时，任意几个事件换成它们的对立事件，这些事件也是相互独立的。</li>
+</ol>
+<h3 id="1-2-6-五大公式"><a href="#1-2-6-五大公式" class="headerlink" title="1.2.6 五大公式"></a>1.2.6 五大公式</h3><ol>
+<li><p>加法公式<br>$$<br>P(A \cup B) = P(A) + P(B) - P(AB) \<br>P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(AB) - P(AC) - P(BC) + P(ABC)<br>$$</p>
+</li>
+<li><p>减法公式<br>$$<br>P(A - B) = P(A) - P(AB)<br>$$</p>
+</li>
+<li><p>乘法公式<br>$$<br>当P(A)&gt;0时，P(AB) = P(A)P(B|A) \<br>当P(A_1A_2 \cdots A_n)&gt;0时，P（A_1)P(A_2|A_1) \cdots P(A_n|A_1A_2 \cdots A_n)<br>$$</p>
+</li>
+<li><p>全概率公式<br>$$<br>设B_1, B_2, \cdots , B_n满足 \bigcup_{i=1}^{n} B_i = \Omega , B_iB_j = \phi(i \neq j)且P(B_k)&gt;0, k=1,2,\cdots ,n, \<br>对于任意事件A有 \<br>P(A) = \sum_{i=1}^{n}P(B_i)P(A|B_i) \<br>称满足 \bigcup_{i=1}^{n} B_i = \Omega , B_iB_j = \phi(i \neq j)的B_1, B_2, \cdots , B_n为\Omega的一个完备事件组<br>$$</p>
+</li>
+<li><p>贝叶斯公式</p>
+<p>设$B_1, B_2, \cdots , B_n$满足</p>
+</li>
+</ol>
+<p>$$<br>\bigcup_{i=1}^{n} B_i = \Omega, B_iB_j = \phi (i \neq j)且P(A)&gt;0,P(B_k)&gt;0,k=0,1,2, \cdots , n<br>$$</p>
+<p>​    则<br>$$<br>P(B_j|A) = \frac{P(B_j)P(A|B_j)}{\sum_{i=1}^{n}P(B_j)P(A|B_j)} \ , j=1,2, \cdots ,n<br>$$</p>
+<h2 id="1-3-古典概型与伯努利概型"><a href="#1-3-古典概型与伯努利概型" class="headerlink" title="1.3 古典概型与伯努利概型"></a>1.3 古典概型与伯努利概型</h2><h3 id="1-3-1-古典型概率"><a href="#1-3-1-古典型概率" class="headerlink" title="1.3.1 古典型概率"></a>1.3.1 古典型概率</h3><blockquote>
+<p>当试验结果为有限n个样本点，且每个样本点的发生具有相等的可能性，如果事件A由$n_A$个样本点组成，则事件A的概率为<br>$$<br>P(A) = \frac{n_A}{n} = \frac{A所包含的样本点数}{样本点总数}<br>$$<br>称有限等可能试验中事件A的概率$P(A)$为古典型概率。</p>
+</blockquote>
+<h3 id="1-3-2-几何型概率"><a href="#1-3-2-几何型概率" class="headerlink" title="1.3.2 几何型概率"></a>1.3.2 几何型概率</h3><blockquote>
+<p>当试验的样本空间是某区域，以$L(\Omega)$表示其几何度量。事件A的样本点所表示的区域为$\Omega_A$，则事件A的概率是<br>$$<br>P(A) = \frac{L(\Omega_A)}{L(\Omega)} = \frac{\Omega_A的几何度量}{\Omega的几何度量}<br>$$<br>称这种样本点个数无限但是几何度量上的等可能试验中事件A的概率P(A)为几何型概率</p>
+</blockquote>
+<h3 id="1-3-3-n重伯努利试验"><a href="#1-3-3-n重伯努利试验" class="headerlink" title="1.3.3 n重伯努利试验"></a>1.3.3 n重伯努利试验</h3><blockquote>
+<p>把一个随机试验独立重复做若干次，即各次试验所联系的事件之间相互独立，且同一事件在各个试验中出现的概率相同，称为独立重复试验。</p>
+<p>如果每次试验只有两个结果$A和\overline{A}$，则称这种试验为伯努利试验。将伯努利试验独立重复进行n次，称为n重伯努利试验。</p>
+</blockquote>
+<p>​    设在每次试验中，概率$P(A) = p(0&lt;p&lt;1)$，则在n重伯努利试验中事件A发生k次的概率，又称为二项概率公式：<br>$$<br>C_n^k p^k (1-p)^{n-k} , k=0,1,2, \cdots ,n<br>$$</p>
+<h1 id="第二章-随机变量及其概率分布"><a href="#第二章-随机变量及其概率分布" class="headerlink" title="第二章 随机变量及其概率分布"></a>第二章 随机变量及其概率分布</h1><h2 id="2-1-随机变量及其分布函数"><a href="#2-1-随机变量及其分布函数" class="headerlink" title="2.1 随机变量及其分布函数"></a>2.1 随机变量及其分布函数</h2><h3 id="2-1-1-随机变量"><a href="#2-1-1-随机变量" class="headerlink" title="2.1.1 随机变量"></a>2.1.1 随机变量</h3><blockquote>
+<p>在样本空间$\Omega$上的实值函数$X=X(\omega) , \omega \in \Omega$，称$X(\omega)$为随机变量，简记成$X$.</p>
+<p>$X(\omega)的定义域是\Omega$</p>
+</blockquote>
+<h3 id="2-1-2-分布函数"><a href="#2-1-2-分布函数" class="headerlink" title="2.1.2 分布函数"></a>2.1.2 分布函数</h3><blockquote>
+<p>对于任意实数$x$，记函数$F(x) = P{X \le x} , -\infty &lt; x &lt; +\infty$，称$F(x)$为随机变量$X$的分布函数。</p>
+<p>分布函数$F(x)$是定义在$(-\infty,+\infty)$上的一个实值函数，$F(x)$的值等于随机变量$X$在区间$(-\infty,x]$内取值的范围，即事件”$X \le x$”的概率。</p>
+</blockquote>
+<h3 id="2-1-3-分布函数性质"><a href="#2-1-3-分布函数性质" class="headerlink" title="2.1.3 分布函数性质"></a>2.1.3 分布函数性质</h3><ol>
+<li>$0 \le F(x) \le 1$</li>
+<li>$lim_{x\rightarrow-\infty}F(x) = 0$，记为$F(-\infty) = 0$. $lim_{x \rightarrow + \infty}F(x) = 1$，记为$F(+ \infty) = 1$</li>
+<li>$F(x)$是单调非减函数，即当$x_1&lt;x_2$时，$F(x_1) \le F(x_2)$</li>
+<li>$F(x)$是右连续的，即$F(x+0)=F(x)$</li>
+<li>对任意$x_1&lt;x_2$,有$P{x_1&lt;X \le x_2} = F(x_2) - F(x_1)$</li>
+<li>对任意的$x$,$P{X=x} = F(x) - F(x-0)$</li>
+</ol>
+<h2 id="2-2-离散型随机变量和连续型随机变量"><a href="#2-2-离散型随机变量和连续型随机变量" class="headerlink" title="2.2 离散型随机变量和连续型随机变量"></a>2.2 离散型随机变量和连续型随机变量</h2><h3 id="2-2-1-离散型随机变量"><a href="#2-2-1-离散型随机变量" class="headerlink" title="2.2.1 离散型随机变量"></a>2.2.1 离散型随机变量</h3><blockquote>
+<p>如果一个随机变量的可能取值是有限多个或可数无穷多个，则称它为离散型随机变量。 </p>
+</blockquote>
+<h3 id="2-2-2-离散型随机变量-X-的概率分布"><a href="#2-2-2-离散型随机变量-X-的概率分布" class="headerlink" title="2.2.2 离散型随机变量$X$的概率分布"></a>2.2.2 离散型随机变量$X$的概率分布</h3><blockquote>
+<p>设离散型随机变量$X$的可能取值是$x_1,x_2, \cdots ,x_n, \cdots$，$X$取各可能值的概率为<br>$$<br>P{X = x_k} = p_k, k=1,2,\cdots<br>$$<br>称上式为离散型随机变量$X$的概率分布或分布律。</p>
+</blockquote>
+<p>​    分布律也有用列表方式给出的(我只能说好难打:joy:)：<br>$$<br>\begin{equation}<br>\begin{array}{c|cccccc}<br>X &amp; x_1 &amp; x_2 &amp; x_3 &amp; \cdots &amp; x_n &amp; \cdots \<br>\hline<br>P &amp; p_1 &amp; p_2 &amp; p_3 &amp; \cdots &amp; p_n &amp; \cdots \<br>\end{array}<br>\end{equation}<br>$$</p>
+<h3 id="2-2-3-连续型随机变量及其概率密度"><a href="#2-2-3-连续型随机变量及其概率密度" class="headerlink" title="2.2.3 连续型随机变量及其概率密度"></a>2.2.3 连续型随机变量及其概率密度</h3><blockquote>
+<p>如果对随机变量$X$的分布函数$F(x)$，存在一个非负可积函数$f(x)$，使得对任意实数$x$，都有：<br>$$<br>F(x) = \int_{-\infty}^{x}f(t)dt , -\infty&lt;x&lt;+\infty<br>$$<br>称X为连续型随机变量，函数$f(x)$称为$X$的概率密度。</p>
+</blockquote>
+<h3 id="2-2-4-概率分布的性质"><a href="#2-2-4-概率分布的性质" class="headerlink" title="2.2.4 概率分布的性质"></a>2.2.4 概率分布的性质</h3><ol>
+<li>$p_k \ge 0 , k=1,2, \cdots$</li>
+<li>$\sum_{k=1}^{+\infty} p_k = 1$</li>
+</ol>
+<p>二者也是概率分布(分布律)的充要条件。</p>
+<h3 id="2-2-5-概率密度-f-x-的性质"><a href="#2-2-5-概率密度-f-x-的性质" class="headerlink" title="2.2.5 概率密度$f(x)$的性质"></a>2.2.5 概率密度$f(x)$的性质</h3><ol>
+<li>$f(x) \ge 0$</li>
+<li>$\int_{-\infty}^{+\infty}f(x)dx = 1$</li>
+<li>对任意实数$x_1&lt;x_2$，有$P{x_1 &lt; X \le x_2} = \int_{x_1}^{x_2} f(t)dt$</li>
+<li>在$f(x)$的连续点处有$F’(x) = f(x)$</li>
+</ol>
+<p>1和2是函数$f(x)$成为某个连续型随机变量的概率密度的充要条件。</p>
+<h2 id="2-3-常用分布"><a href="#2-3-常用分布" class="headerlink" title="2.3 常用分布"></a>2.3 常用分布</h2><h3 id="2-3-1-0-1分布"><a href="#2-3-1-0-1分布" class="headerlink" title="2.3.1 0-1分布"></a>2.3.1 0-1分布</h3><blockquote>
+<p>如果随机变量$X$有分布律<br>$$<br>\begin{equation}<br>\begin{array}{c|cc}<br>X &amp; 0 &amp; 1 \<br>\hline<br>P &amp; 1-p &amp; p \<br>\end{array}<br>\end{equation}<br>,0&lt;p&lt;1<br>$$<br>则称$X$服从参数为$p$的0-1分布。</p>
+</blockquote>
+<h3 id="2-3-2-二项分布"><a href="#2-3-2-二项分布" class="headerlink" title="2.3.2 二项分布"></a>2.3.2 二项分布</h3><blockquote>
+<p>如果随机变量$X$有分布律<br>$$<br>P{X = k} = C_n^k p^k q^{n-k}, k = 0,1,2, \cdots ,n<br>$$<br>其中$0&lt;p&lt;1, q = 1-p$，则称$X$服从参数为$n,p$的二项分布，记作$X \sim B(n,p)$</p>
+</blockquote>
+<p>​    在n重伯努利试验中，若每次试验的成功率为$p(0&lt;p&lt;1)$，则在n次独立重复试验中成功的总次数$X$服从二项分布。</p>
+<p>​    当$n=1$时，二项分布就退化成0-1分布。所以0-1分布记作$B(1,p)$</p>
+<h3 id="2-3-3-几何分布"><a href="#2-3-3-几何分布" class="headerlink" title="2.3.3 几何分布"></a>2.3.3 几何分布</h3><blockquote>
+<p>如果随机变量$X$有分布律<br>$$<br>p{X = k } = pq^{k-1}, k = 1, 2 , \cdots<br>$$<br>其中$0&lt;p&lt;1, q = 1-p$，则称$X$服从参数为$p$的几何分布。</p>
+</blockquote>
+<p>​    在独立重复的伯努利试验中，若每次试验成功率为$p(0&lt;p&lt;1)$，则在第$k$次试验时才首次试验成功的概率服从几何分布。</p>
+<h3 id="2-3-4-超几何分布"><a href="#2-3-4-超几何分布" class="headerlink" title="2.3.4 超几何分布"></a>2.3.4 超几何分布</h3><blockquote>
+<p>如果随机变量$X$的分布律为<br>$$<br>p{X = k} = \frac{C_M^k C_{N-M}^{n-k}}{C_N^n}, k=l_1, \cdots , l_2<br>$$<br>其中$l_1 = max(0,n-N+M),l_2 = min(M,n)$，则称随机变量$X$服从参数为n,N,M的超几何分布。</p>
+</blockquote>
+<p>​    如果N件产品中含有M件次品，从中任意取出n件(或一件一件不放回的取n件)，令$X=$抽取的n件产品中次品的件数，则$X$服从参数为n,N,M的超几何分布。(有放回取n件，$X$服从$B(n,\frac{M}{N}))$</p>
+<h3 id="2-3-5-泊松分布"><a href="#2-3-5-泊松分布" class="headerlink" title="2.3.5 泊松分布"></a>2.3.5 泊松分布</h3><blockquote>
+<p>如果随机变量$X$的分布律为<br>$$<br>P{X=k} = \frac{\lambda^k}{k!}e^{-\lambda} , k=0,1,2, \cdots<br>$$<br>其中$\lambda &gt; 0$为常数，则称随机变量$X$服从参数为$\lambda$的泊松分布，记为$X \sim P(\lambda)$</p>
+</blockquote>
+<h3 id="2-3-6-均匀分布"><a href="#2-3-6-均匀分布" class="headerlink" title="2.3.6 均匀分布"></a>2.3.6 均匀分布</h3><blockquote>
+<p>如果连续型随机变量$X$的概率密度为<br>$$<br>\begin{equation}<br>f(x) =<br>\begin{cases}<br>\frac{1}{b-a} ,&amp;\mbox{$ a \le x \le b $} \<br>0 , &amp;\mbox其他 \<br>\end{cases}<br>\end{equation}<br>$$<br>则称$X$在区间$[a,b]$上服从均匀分布，记作$X \sim U[a,b]$</p>
+<p>如果连续型随机变量$X$的概率密度为<br>$$<br>\begin{equation}<br>f(x) =<br>\begin{cases}<br>\frac{1}{b-a} ,&amp;\mbox{$ a &lt; x &lt; b $} \<br>0 , &amp;\mbox其他 \<br>\end{cases}<br>\end{equation}<br>$$<br>则称$X$在区间$(a,b)$上服从均匀分布，记作$X \sim U(a,b)$</p>
+</blockquote>
+<p>​    无论$X \sim U[a,b]$或$X \sim U(a,b)$，它们的分布函数均为<br>$$<br>\begin{equation}<br>F(x) =<br>\begin{cases}<br>0, &amp;\mbox{$x&lt;a$} \<br>\frac{x-a}{b-a}, &amp;\mbox{$a \le x &lt; b$} \<br>1, &amp;\mbox{$b \le x$} \<br>\end{cases}<br>\end{equation}<br>$$</p>
+<h3 id="2-3-7-指数分布"><a href="#2-3-7-指数分布" class="headerlink" title="2.3.7 指数分布"></a>2.3.7 指数分布</h3><blockquote>
+<p>如果连续型随机变量$X$的概率密度为<br>$$<br>\begin{equation}<br>f(x) =<br>\begin{cases}<br>\lambda e^{-\lambda x} , &amp;\mbox{$x&gt;0$} \<br>0 , &amp;\mbox{$x \le 0$} \<br>\end{cases}<br>\end{equation}<br>$$<br>则称$X$服从参数为$\lambda$的指数分布，记作$X \sim E(\lambda)$</p>
+</blockquote>
+<p>​    设$X \sim E(\lambda)$，则$X$的分布函数为<br>$$<br>\begin{equation}<br>F(x) =<br>\begin{cases}<br>1-e^{-\lambda x} , &amp;\mbox{$x&gt;0$} \<br>0, &amp;\mbox{$x \le 0$}<br>\end{cases}<br>\end{equation}<br>$$</p>
+<h3 id="2-3-8-正态分布"><a href="#2-3-8-正态分布" class="headerlink" title="2.3.8 正态分布"></a>2.3.8 正态分布</h3><blockquote>
+<p>如果随机变量$X$的分布律为<br>$$<br>f(x) = \frac{1}{\sqrt{2 \pi} \sigma}e^{- \frac{(x-\mu)^2}{2 \sigma ^2}} , -\infty &lt; x &lt; +\infty<br>$$<br>其中$\mu, \sigma$为常数且$\sigma &gt; 0$，则称$X$服从参数为$\mu, \sigma$的正态分布，记作$X \sim N(\mu,\sigma^2)$</p>
+</blockquote>
+<p>​    当$\mu = 0, \sigma^2 = 1$时，即$X \sim N(0,1)$，称$X$服从标准正态分布，此时用$\varphi(x)$表示$X$的概率密度，即<br>$$<br>\varphi(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}} , -\infty &lt; x &lt; +\infty<br>$$<br>​    $X \sim N(\mu,\sigma^2)$，其分布函数为<br>$$<br>F(x) = \frac{1}{\sqrt{2\pi}\sigma} \int_{-\infty}^{x} e^{-\frac{(t-\mu)^2}{2\sigma^2}}dt<br>$$<br>​    当$X \sim N(0,1)$时，分布函数用$\Phi(x)$表示<br>$$<br>\Phi(x) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{x}e^{-\frac{t^2}{2}}dt<br>$$</p>
+<h3 id="2-3-9-常用性质"><a href="#2-3-9-常用性质" class="headerlink" title="2.3.9 常用性质"></a>2.3.9 常用性质</h3><ol>
+<li>泊松定理：在伯努利试验中，$p_n$代表事件$A$在试验中出现的概率，它与试验总数$n$有关，如果$lim_{n \rightarrow \infty} = \lambda$</li>
+</ol>
+<p>$$<br>lim_{n\rightarrow \infty} C_n^k p_n^k(1-p_n)^{n-k} = \frac{\lambda^k}{k!}e^{-\lambda}<br>$$</p>
+<p>​    应用泊松定理的要求：$n$较大($n \ge 100$),$p_n$较小($p_n \le 0.1$),$np$不太大，这时有近似公式<br>$$<br>C_n^k p^k (1-p)^{n-k} \approx \frac{(np)^k}{k!} e^{-np}<br>$$</p>
+<ol start="2">
+<li>设$X \sim U[a,b]$，则对$a \le c &lt; d \le b$，有</li>
+</ol>
+<p>$$<br>P{c&lt;X \le d} = \frac{d-c}{b-a}<br>$$</p>
+<p>​    即随机变量落入区间$[c,d]$的概率等于该区间长度与$[a,b]$长度之比。</p>
+<ol start="3">
+<li>设$X \sim E(\lambda)$，则有<ol>
+<li>$P{X &gt; t} = \int_t^{+\infty} \lambda e^{-\lambda t}dt , e&gt;0$</li>
+<li>$P{X&gt;t+s|X&gt;s} = \frac{P{X&gt;t+s}}{P{X&gt;s}} = \frac{e^{-\lambda(t+s)}}{e^{-\lambda s}}= e^{-\lambda t} = P{X&gt;t} , \ t,s&gt;0 $</li>
+</ol>
+</li>
+<li>设$N \sim N(\mu, \sigma^2)$，其分布函数为$F(x)$，则<ol>
+<li>$F(x) = \Phi (\frac{x- \mu}{\sigma})$</li>
+<li>$P{a&lt;X \le b} = \Phi(\frac{b- \mu}{\sigma}) - \Phi(\frac{a- \mu}{\sigma}) , \ a&lt;b$</li>
+<li>概率密度$f(x)$关于$x= \mu$对称，标准正态分布的概率密度$\phi(x)$是偶函数</li>
+<li>$\Phi(-x) = 1- \Phi(x), \Phi(0) = \frac{1}{2}$</li>
+<li>$P{|X| \le a} = 2\Phi(a) - 1$</li>
+</ol>
+</li>
+</ol>
+<h2 id="2-4-随机变量的函数的分布"><a href="#2-4-随机变量的函数的分布" class="headerlink" title="2.4 随机变量的函数的分布"></a>2.4 随机变量的函数的分布</h2><h3 id="2-4-1-离散型随机变量的函数分布"><a href="#2-4-1-离散型随机变量的函数分布" class="headerlink" title="2.4.1 离散型随机变量的函数分布"></a>2.4.1 离散型随机变量的函数分布</h3><p>​    设$X$的分布律为$P{X=x_i} = p_i , i =1,2, \cdots$，则$X$的函数$Y=g(X)$的分布律为<br>$$<br>P(Y=y_i) = \sum_{g(x_j) = y_i}p_j , i=1,2,\cdots<br>$$</p>
+<h3 id="2-4-2-连续型随机变量的函数分布"><a href="#2-4-2-连续型随机变量的函数分布" class="headerlink" title="2.4.2 连续型随机变量的函数分布"></a>2.4.2 连续型随机变量的函数分布</h3><ol>
+<li><p>公式法</p>
+<p>设$X$是一个具有概率密度$f_X(x)$的随机变量，又设$y = g(x)$是单调、导数不为0的可导函数，$x=h(y)$是它的反函数，则$Y=g(X)$的概率密度为</p>
+</li>
+</ol>
+<p>$$<br>\begin{equation}<br>f_Y(y) =<br>\begin{cases}<br>|h’(y)|f_X(h(y)) , &amp;\mbox{$\alpha &lt; y &lt; \beta$} \<br>0, &amp;\mbox{其他}  \<br>\end{cases}<br>\end{equation}<br>$$</p>
+<p>​    其中$(\alpha,\beta)$是函数$g(X)$在$X$的定义域上的值域。</p>
+<ol start="2">
+<li><p>定义法</p>
+<p>先求Y的分布函数</p>
+</li>
+</ol>
+<p>$$<br>F_Y(y) = P{Y \le y} = P{g(X) \le y} = \int_{g(x) \le y} f_X(x)dx<br>$$</p>
+<p>​    再求<br>$$<br>f_Y(y) = F’_Y(y)<br>$$</p>
+<h1 id="第三章-多维随机变量及其分布"><a href="#第三章-多维随机变量及其分布" class="headerlink" title="第三章 多维随机变量及其分布"></a>第三章 多维随机变量及其分布</h1><h2 id="3-1-二维随机变量及其分布"><a href="#3-1-二维随机变量及其分布" class="headerlink" title="3.1 二维随机变量及其分布"></a>3.1 二维随机变量及其分布</h2><h3 id="3-1-1-二维随机变量"><a href="#3-1-1-二维随机变量" class="headerlink" title="3.1.1 二维随机变量"></a>3.1.1 二维随机变量</h3><blockquote>
+<p>设$X=X(\omega),Y=Y(\omega)$是定义在样本空间$\Omega$上的两个随机变量，则称向量$(X,Y)$为二维随机变量。</p>
+</blockquote>
+<h3 id="3-1-2-二维随机变量-X-Y-的分布"><a href="#3-1-2-二维随机变量-X-Y-的分布" class="headerlink" title="3.1.2 二维随机变量$(X,Y)$的分布"></a>3.1.2 二维随机变量$(X,Y)$的分布</h3><blockquote>
+<p>$F(x,y) = P{X \le x,Y \le y}, x,y \in (-\infty,+\infty)$</p>
+</blockquote>
+<h3 id="3-1-3-二维随机变量的边缘分布"><a href="#3-1-3-二维随机变量的边缘分布" class="headerlink" title="3.1.3 二维随机变量的边缘分布"></a>3.1.3 二维随机变量的边缘分布</h3><p>​    二维随机变量$(X,Y)$的分布函数为$F(x,y)$，分别称$F_X(x) = P{X \le x}$和$F_Y(y) = P{Y \le y}$为关于$X$和关于$Y$的边缘分布。</p>
+<p>​    显然$F_X(x) = P{X \le x} = P{X \le x,y&lt;+\infty } = F(x,+\infty) = lim_{y \rightarrow+\infty}F(x,y)$</p>
+<h3 id="3-1-4-二维随机变量的条件分布"><a href="#3-1-4-二维随机变量的条件分布" class="headerlink" title="3.1.4 二维随机变量的条件分布"></a>3.1.4 二维随机变量的条件分布</h3><p>​    准确定义看书吧$\cdots$懒得打了$\cdots$</p>
+<p>​    $F_{X|Y}(x|y) = P{X \le x| Y=y}$相反同理</p>
+<h3 id="3-1-5-二维离散型随机变量"><a href="#3-1-5-二维离散型随机变量" class="headerlink" title="3.1.5 二维离散型随机变量"></a>3.1.5 二维离散型随机变量</h3><blockquote>
+<p>如果随机变量$(X,Y)$的可能取值为有限个或可数无穷多个$(x_i,y_i),i,j=1,2, \cdots$，则称$(X,Y)$为二维离散型随机变量。</p>
+</blockquote>
+<h3 id="3-1-6-二维离散型随机变量的概率分布"><a href="#3-1-6-二维离散型随机变量的概率分布" class="headerlink" title="3.1.6 二维离散型随机变量的概率分布"></a>3.1.6 二维离散型随机变量的概率分布</h3><blockquote>
+<p>二维离散型随机变量$(X,Y)$的可能取值为$(x_i,y_i),i,j=1,2, \cdots$，则<br>$$<br>P{X=x_i,Y=y_i} = p_{ij}, \ \ i,j = 1,2, \cdots<br>$$<br>称为二维离散型随机变量$(X,Y)$的概率分布或分布律。</p>
+</blockquote>
+<h3 id="3-1-7-二维离散型随机变量的边缘分布"><a href="#3-1-7-二维离散型随机变量的边缘分布" class="headerlink" title="3.1.7 二维离散型随机变量的边缘分布"></a>3.1.7 二维离散型随机变量的边缘分布</h3><blockquote>
+<p>$$<br>p_{i\cdot} = P{X = x_i} =  \sum_{j=1}^{+\infty}p_{ij} , i=1,2,\cdots \<br>p_{\cdot j} = P{Y = y_j}= \sum_{i=1}^{+\infty}p_{ij}, j=1,2, \cdots<br>$$</p>
+</blockquote>
+<h3 id="3-1-8-二维离散型随机变量的条件分布"><a href="#3-1-8-二维离散型随机变量的条件分布" class="headerlink" title="3.1.8 二维离散型随机变量的条件分布"></a>3.1.8 二维离散型随机变量的条件分布</h3><blockquote>
+<p>对与给定的$j$，如果$P{Y = y_i}&gt;0 , j=1,2, \cdots$</p>
+<p>则称$P{X = x_i | Y = y_i} = \frac{P{X=x_i,Y=y_i}}{P{Y=y_i}} = \frac{p_{ij}}{p_{\cdot j}} , \ \ i=1,2, \cdots $</p>
+<p>为在$Y=y_j$条件下随机变量$X$的条件分布。</p>
+</blockquote>
+<h3 id="3-1-9-二维连续型随机变量及其概率密度"><a href="#3-1-9-二维连续型随机变量及其概率密度" class="headerlink" title="3.1.9 二维连续型随机变量及其概率密度"></a>3.1.9 二维连续型随机变量及其概率密度</h3><blockquote>
+<p>如果随机变量$(X,Y)$的分布函数$F(x,y)$存在非负函数$f(x,y)$使得对于任意实数$x$和$y$都有<br>$$<br>F(x,y) = \int_{-\infty}^x \int_{-\infty}^y f(u,v)dudv , \ \ x,y \in (-\infty,+\infty)<br>$$<br>则称$(X,Y)$为二维连续型随机变量，函数$f(x,y)$称为$(X,Y)$的概率密度。</p>
+</blockquote>
+<p>​    对于二维连续型随机变量$(X,Y)$，设它的概率密度$f(x,y)$，由<br>$$<br>F_X(x) = F(x,+\infty) = \int_{-\infty}^x[\int_{-\infty}^{+\infty}f(x,y)dy]dx<br>$$<br>​    可知$X$也是一个连续型变量，而且它的概率密度为 $f_X(x) = \int_{-\infty}^{+\infty}f(x,y)dy$</p>
+<h3 id="3-1-10-二维连续型随机变量的边缘密度"><a href="#3-1-10-二维连续型随机变量的边缘密度" class="headerlink" title="3.1.10 二维连续型随机变量的边缘密度"></a>3.1.10 二维连续型随机变量的边缘密度</h3><blockquote>
+<p>$f_X(x) = \int_{-\infty}^{+\infty}f(x,y)dy和f_Y(y) = \int_{-\infty}^{+\infty}f(x,y)dx$</p>
+<p>被分别称为$(X,Y)$关于$X$和关于$Y$的边缘密度</p>
+</blockquote>
+<h3 id="3-1-11-二维连续型随机变量的条件密度"><a href="#3-1-11-二维连续型随机变量的条件密度" class="headerlink" title="3.1.11 二维连续型随机变量的条件密度"></a>3.1.11 二维连续型随机变量的条件密度</h3><blockquote>
+<p>设$f(x,y)$在点$(x,y)$连续，$f_Y(y)$连续且$f_Y(y)&gt;0$，则条件分布为<br>$$<br>F_{X|Y} = \int_{-\infty}^x \frac{f(u,y)}{f_Y(y)}du<br>$$<br>其中$\frac{f(u,y)}{f_Y(y)}$被称为在条件$Y=y$下的条件密度，记作<br>$$<br>f_{X|Y}(x|y) = \frac{f(u,y)}{f_Y(y)} , \ \ f_Y(y)&gt;0<br>$$<br>相反同理。</p>
+</blockquote>
+<h3 id="3-1-12-分布函数-F-x-y-的性质"><a href="#3-1-12-分布函数-F-x-y-的性质" class="headerlink" title="3.1.12 分布函数$F(x,y)$的性质"></a>3.1.12 分布函数$F(x,y)$的性质</h3><ol>
+<li>对任意的x,y,均有$0 \le F(x,y) \le 1$</li>
+<li>$F(-\infty,y) = F(x,-\infty) = F(-\infty,-\infty) = 0, F(+\infty,+\infty) = 1$</li>
+<li>F(x,y)关于x和关于y均单调不减，且是右连续的</li>
+<li>$P{a&lt;X \le b,c&lt;X \le d} = F(b,d) + F(a,c) - F(b,c) - F(a,b)$</li>
+</ol>
+<h3 id="3-1-13-二维离散型随机变量的分布律-P-X-x-i-Y-y-j-p-ij-的性质"><a href="#3-1-13-二维离散型随机变量的分布律-P-X-x-i-Y-y-j-p-ij-的性质" class="headerlink" title="3.1.13 二维离散型随机变量的分布律$P{X =x_i,Y =y_j} = p_{ij}$的性质"></a>3.1.13 二维离散型随机变量的分布律$P{X =x_i,Y =y_j} = p_{ij}$的性质</h3><ol>
+<li>$p_{ij} \ge 0 , \ \ i,j = 1,2, \cdots $</li>
+<li>$\sum_i \sum_j p_{ij} = 1$</li>
+</ol>
+<h3 id="3-1-14-二维连续型随机变量的概率密度-f-x-y-的性质"><a href="#3-1-14-二维连续型随机变量的概率密度-f-x-y-的性质" class="headerlink" title="3.1.14 二维连续型随机变量的概率密度$f(x,y)$的性质"></a>3.1.14 二维连续型随机变量的概率密度$f(x,y)$的性质</h3><ol>
+<li>$f(x,y) \ge 0$</li>
+<li>$\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty} f(x,y)dxdy=1$</li>
+<li>随机变量$(X,Y)$落在区域D内的概率</li>
+</ol>
+<p>$$<br>P{(X,Y) \in D} = \iint_D f(x,y)dxdy<br>$$</p>
+<h2 id="3-2-随机变量的独立性"><a href="#3-2-随机变量的独立性" class="headerlink" title="3.2 随机变量的独立性"></a>3.2 随机变量的独立性</h2><h3 id="3-2-1-随机变量的独立性"><a href="#3-2-1-随机变量的独立性" class="headerlink" title="3.2.1 随机变量的独立性"></a>3.2.1 随机变量的独立性</h3><blockquote>
+<p>如果对任意的$x,y$都有$F(x,y)=F_X(x) F_Y(y)$则称随机变量X与Y相互独立。</p>
+</blockquote>
+<h3 id="3-2-2-随机变量相互独立的充要条件"><a href="#3-2-2-随机变量相互独立的充要条件" class="headerlink" title="3.2.2 随机变量相互独立的充要条件"></a>3.2.2 随机变量相互独立的充要条件</h3><ol>
+<li>离散型随机变量X和Y相互独立的充要条件：对任意的$i,j = 1,2, \cdots有p_{ij} = p_{i\cdot}p_{\cdot j}$</li>
+<li>连续型随机变量X和Y相互独立的充要条件：对任意的$x,y,有f(x,y) = f_X(x) f_Y(y)$</li>
+</ol>
+<h3 id="3-2-3-二维随机变量函数的分布"><a href="#3-2-3-二维随机变量函数的分布" class="headerlink" title="3.2.3 二维随机变量函数的分布"></a>3.2.3 二维随机变量函数的分布</h3><ol>
+<li><p>离散型<br>$$<br>P(Z = z_k) = \sum_{g(x_i,y_j)=z_k}P(X=x_i,Y=y_j)<br>$$</p>
+</li>
+<li><p>连续型</p>
+</li>
+</ol>
+<p>$$<br>F_Z(z)的求法，可以用公式 \<br>F_Z(z) = P{Z \le z} = P{g(x,y) \le z} = \iint_{g(x,y) \le z} f(x,y)dxdy \<br>特别的，当Z=X+Y时 \<br>F_Z(z) = P{X+Y \le z} = \iint_{x+y \le z} f(x,y)dxdy = \int_{-\infty}^{+\infty}dx \int_{-\infty}^{z-x}f(x,y)dy \<br>由此可得Z=X+Y的概率密度为 \<br>f_Z(z) = \int_{-\infty}^{+\infty}f(x,z-x)dx \ \ 或f_Z(z) = \int_{-\infty}^{+\infty}f(z-y,y)dy \<br>特别的，当X和Y相互独立时 \<br>f_Z(z) = \int_{-\infty}^{+\infty}f_X(x) f_Y(z-x)dx \ \ 或 f_Z(z) = \int_{-\infty}^{+\infty}f_X(z-y)f_Y(y)dy \<br>这两个公式称为卷积公式，记为f_X \ast f_Y<br>$$</p>
+</p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=http://SEULinuxClub.github.io/2017/06/10/概率论总结-前三章/%20东南大学Linux俱乐部%20概率论总结(前三章)" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2017/06/10/概率论总结第四章/" title="概率论总结第四章"><i class="fa fa-angle-double-left"></i>&nbsp;Previous post: 概率论总结第四章</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2017/06/09/操作系统实验三/" title="操作系统实验三">Next post: 操作系统实验三&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><div id="lv-container" data-id="city" data-uid="MTAyMC8zNjY3Ny8xMzIxMg=="><script type="text/javascript">(function (d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') {
+        return;
+    }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');</script><noscript> Please activate JavaScript for write a comment in LiveRe</noscript></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://SEULinuxClub.github.io" rel="noopener noreferrer">SEU Linux Club</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>

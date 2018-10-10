@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="SEU Linux Club"><title>概率论总结第四章 · 东南大学Linux俱乐部</title><meta name="description" content="PDF
+请看PDF版的好吧-_-|||MathJax实在不给力第四章 随机变量的数字特征4.1 随机变量的数学期望和方差4.1.1 数学期望
+
+离散型随机变量的数学期望
+设随机变量$X$的概率分布为$$P{X = x_k} = p_k, \ \ k=1,2, \cdots$$如果级数$\sum_{k"><meta name="keywords" content="Linux &amp; More"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">Club Blog</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">SEU LINUX Blog</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li class="soc"><a href="https://github.com/SEULinuxClub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github">&nbsp;</i></a><a href="http://SEULinuxClub.github.io/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://SEULinuxClub.github.io" rel="noopener noreferrer">SEU Linux Club</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>概率论总结第四章</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2017-06-10</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/概率论/" title="概率论" class="a-tag">概率论</a><span>&nbsp;</span></span></p><p class="post-abstract"><p><a href="https://raw.githubusercontent.com/ZizhuoWang/ImageBed/e491f5407c39258c9f43733430d5818367fb6ccb/GaiLvLun/%E6%A6%82%E7%8E%87%E8%AE%BA%E6%80%BB%E7%BB%93%E7%AC%AC%E5%9B%9B%E7%AB%A0.pdf" target="_blank" rel="noopener">PDF</a></p>
+<h1 id="请看PDF版的好吧-MathJax实在不给力"><a href="#请看PDF版的好吧-MathJax实在不给力" class="headerlink" title="请看PDF版的好吧-_-|||MathJax实在不给力"></a>请看PDF版的好吧-_-|||MathJax实在不给力</h1><h1 id="第四章-随机变量的数字特征"><a href="#第四章-随机变量的数字特征" class="headerlink" title="第四章 随机变量的数字特征"></a>第四章 随机变量的数字特征</h1><h2 id="4-1-随机变量的数学期望和方差"><a href="#4-1-随机变量的数学期望和方差" class="headerlink" title="4.1 随机变量的数学期望和方差"></a>4.1 随机变量的数学期望和方差</h2><h3 id="4-1-1-数学期望"><a href="#4-1-1-数学期望" class="headerlink" title="4.1.1 数学期望"></a>4.1.1 数学期望</h3><blockquote>
+<ol>
+<li><p>离散型随机变量的数学期望</p>
+<p>设随机变量$X$的概率分布为<br>$$<br>P{X = x_k} = p_k, \ \ k=1,2, \cdots<br>$$<br>如果级数$\sum_{k=1}^{+\infty}x_kp_k$绝对收敛，则称此级数为随机变量$X$的数学期望或均值，记作$E(X)$.</p>
+</li>
+<li><p>连续型随机变量的数学期望</p>
+<p>设随机变量$X$的概率密度为$f(x)$，如果积分$\int_{-\infty}^{+\infty}xf(x)dx$绝对收敛，则称此积分为随机变量$X$的数学期望与均值，记作$E(X)$，即$E(X) = \int_{-\infty}^{+\infty}xf(x)dx$</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="4-1-2-数学期望的性质"><a href="#4-1-2-数学期望的性质" class="headerlink" title="4.1.2 数学期望的性质"></a>4.1.2 数学期望的性质</h3><ol>
+<li>设$C$是常数，则有$E(C) = C$</li>
+<li>设$X$是随机变量，$C$是常数，则有$E(CX) = CE(X)$</li>
+<li>设$X$和$Y$是任意两个随机变量，则有$E(X \pm Y) = EX \pm EY$</li>
+<li>设随机变量$X$和$Y$相互独立，则有$E(XY) = E(X)E(Y)$</li>
+</ol>
+<h3 id="4-1-3-随机变量-X-的函数-Y-g-X-的数学期望"><a href="#4-1-3-随机变量-X-的函数-Y-g-X-的数学期望" class="headerlink" title="4.1.3 随机变量$X$的函数$Y=g(X)$的数学期望"></a>4.1.3 随机变量$X$的函数$Y=g(X)$的数学期望</h3><ol>
+<li><p>设随机变量$X$的概率分布为<br>$$<br>P{X=x_k} = p_k, \ \ k=1,2, \cdots<br>$$<br>如果级数$\sum_{k=1}^{+\infty}g(x_k)p_k$绝对收敛，则随机变量$Y=g(X)$ 的数学期望为<br>$$<br>E(Y) = E[g(X)] = \sum_{k=1}^{+\infty} g(x_k)p_k<br>$$</p>
+</li>
+<li><p>设随机变量X的概率密度为$f(x)$，如果积分$\int_{-\infty}^{+\infty}g(x)f(x)$绝对收敛，则随机变量$Y=g(X)$的数学期望为<br>$$<br>EY = E[g(x)] = \int_{-\infty}^{+\infty}g(x)f(x)dx<br>$$</p>
+</li>
+</ol>
+<h3 id="4-1-4-随机变量-X-Y-的函数-Z-g-X-Y-的数学期望"><a href="#4-1-4-随机变量-X-Y-的函数-Z-g-X-Y-的数学期望" class="headerlink" title="4.1.4 随机变量$(X,Y)$的函数$Z=g(X,Y)$的数学期望"></a>4.1.4 随机变量$(X,Y)$的函数$Z=g(X,Y)$的数学期望</h3><ol>
+<li><p>设随机变量$(X,Y)$的概率分布为<br>$$<br>P{X=x_i,Y=y_j} = p_{ij}, \ \ i,j=1,2, \cdots<br>$$<br>如果级数$\sum_{i=1}^{+\infty} \sum_{j=1}^{+\infty}g(x_i,y_j)p_{ij}$绝对收敛，则随机变量$Z=g(X,Y)$的数学期望为<br>$$<br>E(Z) = E[g(X,Y)] =\sum_{i=1}^{+\infty} \sum_{j=1}^{+\infty}g(x_i,y_j)p_{ij}<br>$$</p>
+</li>
+<li><p>设随机变量$(X,Y)$的概率密度为$f(x,y)$,如果积分$\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty} g(x,y)f(x,y)dxdy$绝对收敛，则随机变量$Z = g(x,y)$的数学期望为<br>$$<br>E(Z) = E[g(X,Y)] =\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty} g(x,y)f(x,y)dxdy<br>$$</p>
+</li>
+</ol>
+<h3 id="4-1-5-方差"><a href="#4-1-5-方差" class="headerlink" title="4.1.5 方差"></a>4.1.5 方差</h3><blockquote>
+<p>设$X$是随机变量，如果数学期望$E{[X-E(X)]^2}$存在，则称之为$X$的方差，记作$D(X)$.</p>
+</blockquote>
+<p>​    称$\sqrt{D(X)}$为随机变量$X$的标准差或均方差，记作$\sigma(X)$.</p>
+<h3 id="4-1-6-方差计算公式"><a href="#4-1-6-方差计算公式" class="headerlink" title="4.1.6 方差计算公式"></a>4.1.6 方差计算公式</h3><p>$$<br>D(X) = E(X^2) - [E(X)]^2<br>$$</p>
+<h3 id="4-1-7-方差的性质"><a href="#4-1-7-方差的性质" class="headerlink" title="4.1.7 方差的性质"></a>4.1.7 方差的性质</h3><ol>
+<li>设$C$是常数，则$D(C) = 0$，反之，从$D(X) = 0$中不能得出$X$为常数的结论</li>
+<li>设$X$是随机变量，$a$和$b$是常数，则有$D(aX + b) = a^2D(X)$</li>
+<li>设随机变量$X$和$Y$相互独立，则有$D(X \pm Y)=D(X) + D(Y)$</li>
+</ol>
+<h3 id="4-1-8-常用随机变量的数学期望和方差"><a href="#4-1-8-常用随机变量的数学期望和方差" class="headerlink" title="4.1.8 常用随机变量的数学期望和方差"></a>4.1.8 常用随机变量的数学期望和方差</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">分布</th>
+<th style="text-align:center">E(X)</th>
+<th style="text-align:center">D(X)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0-1分布</td>
+<td style="text-align:center">$p$</td>
+<td style="text-align:center">$p(1-p)$</td>
+</tr>
+<tr>
+<td style="text-align:center">二项分布$X \sim B(n,p)$</td>
+<td style="text-align:center">$np$</td>
+<td style="text-align:center">$np(1-p)$</td>
+</tr>
+<tr>
+<td style="text-align:center">泊松分布$X \sim P(\lambda)$</td>
+<td style="text-align:center">$\lambda$</td>
+<td style="text-align:center">$\lambda$</td>
+</tr>
+<tr>
+<td style="text-align:center">几何分布$P{X=k}=p(1-p)^{k-1}$</td>
+<td style="text-align:center">$\frac{1}{p}$</td>
+<td style="text-align:center">$\frac{1-p}{p^2}$</td>
+</tr>
+<tr>
+<td style="text-align:center">均匀分布$X \sim U(a,b)$</td>
+<td style="text-align:center">$\frac{a+b}{2}$</td>
+<td style="text-align:center">$\frac{(b-a)^2}{12}$</td>
+</tr>
+<tr>
+<td style="text-align:center">指数分布$X \sim E(\lambda)$</td>
+<td style="text-align:center">$\frac{1}{\lambda}$</td>
+<td style="text-align:center">$\frac{1}{\lambda^2}$</td>
+</tr>
+<tr>
+<td style="text-align:center">正态分布$X \sim N(\mu,\sigma^2)$</td>
+<td style="text-align:center">$\mu$</td>
+<td style="text-align:center">$\sigma^2$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-2-矩、协方差和相关系数"><a href="#4-2-矩、协方差和相关系数" class="headerlink" title="4.2 矩、协方差和相关系数"></a>4.2 矩、协方差和相关系数</h2><h3 id="4-2-1-矩"><a href="#4-2-1-矩" class="headerlink" title="4.2.1 矩"></a>4.2.1 矩</h3><blockquote>
+<ol>
+<li><p>设$X$是随机变量，如果<br>$$<br>E(X^k), \ \ k=1,2, \cdots<br>$$<br>存在，则称之为$X$的$k$阶原点矩。</p>
+</li>
+<li><p>设$X$是随机变量，如果<br>$$<br>E{[X-E(X)]^k} , \ \ k=1,2, \cdots<br>$$<br>存在，则称之为$X$的$k$阶中心矩。</p>
+</li>
+<li><p>设$X$和$Y$是两个随机变量，如果<br>$$<br>E(X^k Y^l), \ \ k,l = 1,2, \cdots<br>$$<br>存在，则称之为$X$和$Y$的$k+l$阶混合矩。</p>
+</li>
+<li><p>设$X$和$Y$是两个随机变量，如果<br>$$<br>E{[X-E(X)]^k[Y-E(Y)]^l} , \ \ k,l=1,2, \cdots<br>$$</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="4-2-2-协方差"><a href="#4-2-2-协方差" class="headerlink" title="4.2.2 协方差"></a>4.2.2 协方差</h3><blockquote>
+<p>对于随机变量$X$和$Y$，如果$E{[X-E(X)][Y-E(Y)]}$存在，则称之为$X$和$Y$的协方差，记作$cov(X,Y)$</p>
+</blockquote>
+<h3 id="4-2-3-相关系数"><a href="#4-2-3-相关系数" class="headerlink" title="4.2.3 相关系数"></a>4.2.3 相关系数</h3><blockquote>
+<p>对于随机变量$X$和$Y$，如果$D(X)D(Y) \neq 0$，则称$\frac{cov(X,Y)}{\sqrt{D(X)} \sqrt{D(Y)}}$为$X$和$Y$的相关系数，记作$\rho_{XY}$.如果$D(X)D(Y) = 0$,则$\rho_{XY} = 0$</p>
+</blockquote>
+<h3 id="4-2-4-不相关"><a href="#4-2-4-不相关" class="headerlink" title="4.2.4 不相关"></a>4.2.4 不相关</h3><blockquote>
+<p>如果随机变量$X$和$Y$的相关系数$\rho_{XY} = 0$，则称$X$和$Y$不相关。</p>
+</blockquote>
+<h3 id="4-2-5-协方差的公式和性质"><a href="#4-2-5-协方差的公式和性质" class="headerlink" title="4.2.5 协方差的公式和性质"></a>4.2.5 协方差的公式和性质</h3><ol>
+<li>$cov(X,Y) = E(XY)-E(X)E(Y)$</li>
+<li>$D(X \pm Y) = D(X) +D(Y) \pm 2cov(X,Y)$</li>
+<li>性质<ol>
+<li>$cov(X,Y) = cov(Y,X)$</li>
+<li>$cov(aX,bY) = abcov(X,Y)$,其中a,b为常数</li>
+<li>$cov(X_1+X_2,Y) = cov(X_1,Y) + cov(X_2,Y) $</li>
+</ol>
+</li>
+</ol>
+<h3 id="4-2-6-相关系数性质"><a href="#4-2-6-相关系数性质" class="headerlink" title="4.2.6 相关系数性质"></a>4.2.6 相关系数性质</h3><ol>
+<li><p>$|\rho_{XY}| \le 1$</p>
+</li>
+<li><p>$|\rho_{XY}| = 1$的充分必要条件是存在不全为零的常数$a$和$b$，使得<br>$$<br>P{Y=aX+b} = 1<br>$$</p>
+</li>
+</ol>
+<h3 id="4-2-7-独立与不相关"><a href="#4-2-7-独立与不相关" class="headerlink" title="4.2.7 独立与不相关"></a>4.2.7 独立与不相关</h3><ol>
+<li>随机变量$X$和$Y$相互独立，则必不相关。不相关，不一定独立。</li>
+<li>对二维正态随机变量$(X,Y)$,X和Y相互独立的充要条件是$\rho=0$</li>
+<li>对二维正态随机变量$(X,Y)$,X和Y相互独立与X和Y不相关是等价的。</li>
+</ol>
+</p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=http://SEULinuxClub.github.io/2017/06/10/概率论总结第四章/%20东南大学Linux俱乐部%20概率论总结第四章" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2017/06/10/概率论总结第五章/" title="概率论总结第五章"><i class="fa fa-angle-double-left"></i>&nbsp;Previous post: 概率论总结第五章</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2017/06/10/概率论总结-前三章/" title="概率论总结(前三章)">Next post: 概率论总结(前三章)&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><div id="lv-container" data-id="city" data-uid="MTAyMC8zNjY3Ny8xMzIxMg=="><script type="text/javascript">(function (d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') {
+        return;
+    }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');</script><noscript> Please activate JavaScript for write a comment in LiveRe</noscript></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://SEULinuxClub.github.io" rel="noopener noreferrer">SEU Linux Club</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
