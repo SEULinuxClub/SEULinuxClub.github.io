@@ -471,7 +471,7 @@ a:focus {
   color: #e6e6e6 !important;
   background-color: transparent !important;
   text-decoration: none;
-  border-bottom: solid transparent 2px; }
+  border-bottom: solid rgba(0, 0, 0, 0) 2px; }
 
 .soc a:focus {
   color: #e6e6e6 !important; }
